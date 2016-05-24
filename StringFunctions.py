@@ -11,8 +11,6 @@ from pattern.en.wordlist import PROFANITY,ACADEMIC
 import re
 import string
 
-#Vocabulary and normalisation resources were obtained here: https://noisy-text.github.io/norm-shared-task.html#resource
-
 VOCAB_FILE = 'scowl.american.70';
 PUNCTUATION = string.punctuation;
 
