@@ -4,7 +4,7 @@
 import StringFunctions
 import unittest
 
-class TestCountEmoticons(unittest.TestCase):
+class TestStringFunctions(unittest.TestCase):
         
     def testCleanPostNoneOrNotStr(self):
         self.assertRaises(TypeError,StringFunctions.cleanPost,None);
