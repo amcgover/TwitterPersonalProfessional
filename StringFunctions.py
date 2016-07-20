@@ -185,8 +185,8 @@ def extractFeatures(filePath):
         features['Profanity'] = profanityCount / numTokens
         features['Academic'] = academicCount / numTokens
         features['NumTokens'] = numTokens;
+        features['Sentiment'] = math.fabs(sentiment(tweet)[0])
         features['AvgWordLength'] = totalWordLength / wordCount
-        features['Subjectivity'] = sentiment(tweet)[1]
         collection.append(features);
     return collection;
 
