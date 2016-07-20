@@ -44,9 +44,9 @@ class TestStringFunctions(unittest.TestCase):
     
     def testExtractFeatures(self):
         desiredOutputFirst = {'Normalisations':0.14285714285714285, 'Emojis':0.07142857142857142, 'Exclamations':0.07142857142857142, 'Stops':0.5, 'Profanity':0.0, 
-                              'Academic':0.14285714285714285, 'NumTokens':14.0, 'AvgWordLength':3.75, 'Subjectivity':0.30000000000000004}
+                              'Academic':0.14285714285714285, 'NumTokens':14.0, 'AvgWordLength':3.75, 'Sentiment':0.4375}
         desiredOutputSecond = {'Normalisations':0.0, 'Emojis':0.1111111111111111, 'Exclamations':0.2222222222222222, 'Stops':0.3888888888888889, 'Profanity':0.05555555555555555, 
-                              'Academic':0.1111111111111111, 'NumTokens':18.0, 'AvgWordLength':3.75, 'Subjectivity':0.3333333333333333}
+                              'Academic':0.1111111111111111, 'NumTokens':18.0, 'AvgWordLength':3.75, 'Sentiment':0.5}
         output = StringFunctions.extractFeatures('TestTweetFile.json')
         self.assertEqual(desiredOutputFirst, output[0]);
         self.assertEqual(desiredOutputSecond, output[1]);
