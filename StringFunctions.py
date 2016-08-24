@@ -40,7 +40,7 @@ def cleanPost(post):
 def createCSVFiles():
     '''This function creates every possible subset of the features extracted and creates an individual CSV file for each subset
     The purpose of this is to determine which subset provides the best classification results'''
-    featureSubsets = listPowerset(["Normalisations","Emojis","Exclamations","Stops","Profanity","Academic","NumTokens","Subjectivity","AvgWordLength"])
+    featureSubsets = listPowerset(["Normalisations","Emojis","Exclamations","Stops","Profanity","Academic","NumTokens","Sentiment","AvgWordLength"])
     lengthFeatureSubsets = len(featureSubsets);
     filePath = 'Feature Subsets/Subset'#The folder where the CSV files are being written to
     filesToWrite = [];
