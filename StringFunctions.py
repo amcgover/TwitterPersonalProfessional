@@ -139,7 +139,7 @@ def extractFeatures(filePath):
     7. Ratio of academic words to the total number of tokens.
     7. Total number of tokens.
     8. Average word length.
-    9. Subjectivity.
+    9. Sentiment.
     '''
     
     STOPWORDS = stopwords.words('english');
